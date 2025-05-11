@@ -162,7 +162,7 @@ First, install dependencies and copy the ```ros1``` folder from this repository 
 ```
 sudo apt-get install ros-noetic-mavros*
 
-cp ros1 /path/to/catkin_ws/src
+cp -r ros1 /path/to/catkin_ws/src
 catkin_make
 ```
 Then, set the environment vairable for Gazebo models.
@@ -201,7 +201,7 @@ Before get started, please install the simulator based on [this link](https://gi
 
 First, copy the ```ros2``` folder from this repository into your ros2 workspace.
 ```
-cp ros2 /path/to/ros2_ws/src
+cp -r ros2 /path/to/ros2_ws/src
 colcon build --symlink-install
 ```
 Then, start the simulation and deploy NavRL navigation.
